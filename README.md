@@ -2,6 +2,14 @@
 
 A small dependency-free Node app. The frontend is a single-page interactive invite, and the backend stores submissions and serves a protected admin page.
 
+## Live Site
+
+Open the public invite page:
+
+```text
+https://date.cocopiece.top/
+```
+
 ## Run Locally
 
 ```powershell
@@ -12,7 +20,6 @@ npm start
 Open:
 
 - Invite page: `http://127.0.0.1:3000/`
-- Admin page: `http://127.0.0.1:3000/admin`
 
 ## Replace The Photo
 
