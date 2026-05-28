@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Dating Invite</title>
+  <link rel="stylesheet" href="/styles.css?v=20260528-english">
+</head>
+<body>
+  <main id="invite-app" class="app-shell" aria-live="polite">
+    <section class="hero" data-screen="intro">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+      <div class="photo-card" aria-label="Invite photo">
+        <img src="/assets/invite-photo.svg" alt="Invite photo placeholder">
+      </div>
+      <p class="eyebrow" data-copy="intro.eyebrow"></p>
+      <h1 data-copy="intro.title"></h1>
+      <p class="body-copy" data-copy="intro.body"></p>
+      <p class="no-hint" data-no-hint aria-live="polite"></p>
+      <div class="button-stage" data-button-stage>
+        <button class="primary-action" type="button" data-yes-button></button>
+        <button class="secondary-action dodge-button" type="button" data-no-button></button>
+      </div>
+    </section>
+
+    <section class="panel hidden" data-screen="date">
+      <p class="eyebrow" data-copy="date.eyebrow"></p>
+      <h2 data-copy="date.title"></h2>
+      <p class="body-copy" data-copy="date.body"></p>
+      <label class="field">
+        <span data-copy="date.dateLabel"></span>
+        <input type="date" data-date-input>
+      </label>
+      <fieldset class="choice-grid compact">
+        <legend data-copy="date.timeLabel"></legend>
+        <div data-time-slots></div>
+      </fieldset>
+      <button class="wide-action" type="button" data-date-next disabled></button>
+    </section>
+
+    <section class="panel hidden" data-screen="activity">
+      <p class="eyebrow" data-copy="activity.eyebrow"></p>
+      <h2 data-copy="activity.title"></h2>
+      <p class="body-copy" data-copy="activity.body"></p>
+      <div class="choice-grid" data-activities></div>
+      <label class="field custom-field hidden" data-custom-field>
+        <span data-copy="activity.customLabel"></span>
+        <input type="text" maxlength="120" data-custom-activity>
+      </label>
+      <label class="field">
+        <span data-copy="activity.identityLabel"></span>
+        <input type="text" maxlength="160" data-person-hint>
+      </label>
+      <label class="field">
+        <span data-copy="activity.noteLabel"></span>
+        <textarea rows="3" maxlength="500" data-note-input></textarea>
+      </label>
+      <div class="split-actions">
+        <button class="ghost-action" type="button" data-back-date></button>
+        <button class="wide-action" type="button" data-submit disabled></button>
+      </div>
+      <p class="status-line" data-status role="status"></p>
+    </section>
+
+    <section class="panel result-panel hidden" data-screen="result">
+      <p class="eyebrow" data-copy="result.eyebrow"></p>
+      <h2 data-copy="result.title"></h2>
+      <p class="body-copy" data-copy="result.body"></p>
+      <div class="receipt" data-receipt></div>
+      <button class="ghost-action" type="button" data-again></button>
+    </section>
+  </main>
+  <script type="module" src="/js/app.js?v=20260528-english"></script>
+</body>
+</html>

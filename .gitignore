@@ -1,0 +1,23 @@
+# Dependencies and local environment
+node_modules/
+.env
+.env.*
+
+# Runtime data and local test submissions
+data/*.jsonl
+
+# Personal media and large local captures
+screenshot_*.mp4
+public/assets/*.jpg
+public/assets/*.jpeg
+public/assets/*.png
+public/assets/*.webp
+public/assets/*.tmp.*
+
+# Logs and editor/system noise
+*.log
+.DS_Store
+Thumbs.db
+
+# Local fallback Git metadata from workspace setup attempts
+.repo.git/

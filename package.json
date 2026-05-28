@@ -1,0 +1,13 @@
+{
+  "name": "dating-invite-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test --test-isolation=none tests/copy.test.js tests/evasion.test.js tests/server.test.js tests/style.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
